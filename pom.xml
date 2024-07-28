@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.fl</groupId>
 	<artifactId>actions-poc</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<name>actions-poc</name>
 	<description>POC project for Spring Boot &amp; Github Actions</description>
 	<url/>
@@ -49,6 +49,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
+		<finalName>actions-poc</finalName>
 	</build>
 
 </project>
