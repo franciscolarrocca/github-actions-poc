@@ -7,9 +7,5 @@ mvn clean install
 ```
 
 ### Code coverage report generation with Jacoco
-```
-mvn clean test
-```
-
 If everything runs successfully, check the report in:
 `target/site/jacoco/index.html`
