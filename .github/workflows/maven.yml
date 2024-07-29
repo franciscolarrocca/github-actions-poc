@@ -44,7 +44,6 @@ jobs:
         title: '## Coverage Report :test_tube:'
         pass-emoji: ':white_check_mark:'
         fail-emoji: ':x:'
-        update-comment: true
     - name: Is PR overall coverage less than 80% check
       if: ${{ steps.jacoco.outputs.coverage-overall < 80.0 }}
       uses: actions/github-script@v6
