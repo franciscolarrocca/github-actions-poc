@@ -52,6 +52,12 @@
 				<groupId>org.jacoco</groupId>
 				<artifactId>jacoco-maven-plugin</artifactId>
 				<version>0.8.10</version>
+				<configuration>
+					<excludes>
+						<exclude>com/fl/actions_poc/ActionsPocApplication.class</exclude>
+						<exclude>com/fl/actions_poc/controller/advice/*.class</exclude>
+					</excludes>
+				</configuration>
 				<executions>
 					<execution>
 						<goals>

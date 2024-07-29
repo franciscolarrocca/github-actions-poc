@@ -1,4 +1,4 @@
-package com.fl.actions_poc.controller;
+package com.fl.actions_poc.controller.rest;
 
 import org.springframework.web.bind.annotation.*;
 

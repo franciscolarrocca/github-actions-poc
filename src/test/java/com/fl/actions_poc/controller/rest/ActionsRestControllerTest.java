@@ -1,4 +1,4 @@
-package com.fl.actions_poc.controller;
+package com.fl.actions_poc.controller.rest;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
