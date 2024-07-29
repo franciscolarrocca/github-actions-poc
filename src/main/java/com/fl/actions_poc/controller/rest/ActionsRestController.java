@@ -17,7 +17,7 @@ public class ActionsRestController {
 
     @GetMapping("/multiply")
     public Map<String, Integer> multiply(@RequestParam int a, @RequestParam int b) {
-        //validateArguments(a, b);
+        validateArguments(a, b);
         int result = a * b;
         return Map.of("result", result);
     }

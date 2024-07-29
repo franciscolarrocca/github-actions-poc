@@ -15,7 +15,6 @@ public class ActionsRestControllerTest {
     private MockMvc mockMvc;
 
 
-    /*
     @Test
     void add_withPositiveParams_200OK() throws Exception {
         mockMvc.perform(get("/api/add")
@@ -24,7 +23,6 @@ public class ActionsRestControllerTest {
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.result").value(7));
     }
-    */
 
     @Test
     void multiply_withPositiveParams_200OK() throws Exception {
