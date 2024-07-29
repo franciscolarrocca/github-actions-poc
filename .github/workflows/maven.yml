@@ -41,7 +41,7 @@ jobs:
         min-coverage-overall: 80
         min-coverage-changed-files: 80
         # will be used in pull_request comment:
-        title: '# Coverage Report'
+        title: '### Coverage Report'
         pass-emoji: ':white_check_mark:'
         fail-emoji: ':x:'
         update-comment: true
