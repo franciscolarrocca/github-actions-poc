@@ -12,4 +12,5 @@ public class GlobalExceptionHandler {
     public ErrorResponse handleIllegalArgumentException(IllegalArgumentException e) {
        return ErrorResponse.create(e, HttpStatus.BAD_REQUEST, e.getMessage());
     }
+    
 }

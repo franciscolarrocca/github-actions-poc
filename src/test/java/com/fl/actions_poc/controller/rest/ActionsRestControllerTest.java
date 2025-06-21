@@ -16,7 +16,6 @@ public class ActionsRestControllerTest {
     @Autowired
     private MockMvc mockMvc;
 
-
     @Test
     void add_withPositiveParams_200OK() throws Exception {
         mockMvc.perform(get("/api/add")
