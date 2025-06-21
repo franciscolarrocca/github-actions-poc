@@ -1,7 +1,7 @@
 # github-actions-poc
 This project is a proof of concept to understand how to implement GitHub Actions in a Java project.
 
-![actions.png](doc%2Factions.png)
+![actions-poc.png](doc/actions-poc.png)
 
 ### Build JAR file
 ```
