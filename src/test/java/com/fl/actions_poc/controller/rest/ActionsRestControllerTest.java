@@ -19,17 +19,26 @@ public class ActionsRestControllerTest {
     @Test
     void add_withPositiveParams_200OK() throws Exception {
         mockMvc.perform(get("/api/add")
-                        .param("a", "3")
-                        .param("b", "4"))
+                .param("a", "3")
+                .param("b", "4"))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.result").value(7));
     }
 
     @Test
-    void add_withNegativeParams_400BadRequest() throws Exception {
-        ResultActions test = mockMvc.perform(get("/api/add")
-                        .param("a", "-3")
-                        .param("b", "4"))
+    void add_withAAsNegativeParam_400BadRequest() throws Exception {
+        mockMvc.perform(get("/api/add")
+                .param("a", "-3")
+                .param("b", "4"))
+                .andExpect(status().isBadRequest())
+                .andExpect(jsonPath("$.detail").value("Both arguments 'a' and 'b' must be positive"));
+    }
+
+    @Test
+    void add_withBAsNegativeParam_400BadRequest() throws Exception {
+        mockMvc.perform(get("/api/add")
+                .param("a", "3")
+                .param("b", "-4"))
                 .andExpect(status().isBadRequest())
                 .andExpect(jsonPath("$.detail").value("Both arguments 'a' and 'b' must be positive"));
     }
@@ -37,8 +46,8 @@ public class ActionsRestControllerTest {
     @Test
     void multiply_withPositiveParams_200OK() throws Exception {
         mockMvc.perform(get("/api/multiply")
-                        .param("a", "3")
-                        .param("b", "4"))
+                .param("a", "3")
+                .param("b", "4"))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.result").value(12));
     }
