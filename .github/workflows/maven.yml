@@ -1,8 +1,6 @@
 name: github-actions-poc ci/cd flow
 
 on:
-  push:
-    branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
 
